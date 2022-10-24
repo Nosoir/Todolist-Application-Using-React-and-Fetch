@@ -10,3 +10,127 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative);
+@font-face {
+  font-family: 'Calluna-Regular';
+  src: url('https://dl.dropboxusercontent.com/u/166051553/Calluna-Regular/2A2DE3_0_0.eot');
+  src: url('https://dl.dropboxusercontent.com/u/166051553/Calluna-Regular/2A2DE3_0_0.eot?#iefix') format('embedded-opentype'),    url('https://dl.dropboxusercontent.com/u/166051553/Calluna-Regular/2A2DE3_0_0.woff') format('woff'),    url('https://dl.dropboxusercontent.com/u/166051553/Calluna-Regular/2A2DE3_0_0.ttf') format('truetype');}
+
+/* Inicio de Estilo de fondo */
+  * {
+  margin: 0; padding: 0; border: 0 none; position: relative;
+}
+*, *:after, *:before {
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+}
+html {
+  background: #FED279 url(https://2.bp.blogspot.com/-iCCUn-fktvk/UYVomjPC84I/AAAAAAAAAAc/czlS_SMG-rs/s1600/noise.png);
+  color: #3F7963;
+  margin: 1rem auto;
+  border: 4px solid ;
+  width: calc(100% - 36px); 
+  max-width: 800px;
+  padding: 16px;
+  font-family: calluna-regular,'Cinzel Decorative', serif;
+  font-size: 1rem;
+}
+body {
+  width: 100%;
+  border: 4px solid;
+  border-radius: 5px;
+  background: darkslategrey;
+}
+html:before,
+html:after,
+body:before,
+body:after {
+  content: '';
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border: 4px solid;
+}
+html:before {
+  top: -4px;
+  left:-4px;
+  border-color: #FED279 #3F7963 #3F7963 #FED279;
+  border-radius: 0 0 5px 0;
+}
+html:after {
+  top: -4px;
+  right: -4px;
+  border-color: #FED279 #FED279 #3F7963 #3F7963;
+  border-radius: 0 0 0 5px;
+}
+body:before {
+  bottom: -24px;
+  left: -24px;
+  border-color: #3F7963 #3F7963 #FED279 #FED279;
+  border-radius: 0 5px 0 0;
+}
+body:after {
+  bottom: -24px;
+  right: -24px;
+  border-color: #3F7963 #FED279 #FED279 #3F7963;
+  border-radius: 5px 0 0 0;
+}
+/* fIN de Estilo de fondo */
+
+/* Inicio de Estilo de letras */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #E85359;
+  font-family: 'Cinzel Decorative', serif;
+  -webkit-font-feature-settings:"clig", "dlig", "hlig", "liga", "swsh", "onum";
+  -moz-font-feature-settings:"clig", "dlig", "hlig", "liga", "swsh", "onum";
+  font-feature-settings:"clig", "dlig", "hlig", "liga", "swsh";
+  padding-top: 1rem;
+}
+
+.color {
+  background-color: #E85359;
+  color: white;
+  font-family: 'Cinzel Decorative', serif;
+  -webkit-font-feature-settings:"clig", "dlig", "hlig", "liga", "swsh", "onum";
+  -moz-font-feature-settings:"clig", "dlig", "hlig", "liga", "swsh", "onum";
+  font-feature-settings:"clig", "dlig", "hlig", "liga", "swsh";
+}
+/* fIN de Estilo de letras */
+
+/* Inicio de Estilo de la línea */
+.una + p:before {
+  content: '\00A7';
+  color: #B3B04F;
+  font-size: 4rem;
+  position: absolute;
+  top: -4.8rem;
+  left: 50%;
+  transform: rotate(90deg);
+  transform-origin: center;
+  opacity: .6;
+}
+
+.una {
+    text-align: center;
+    display: block;
+    line-height: 1px;
+    height: 1px;
+    margin: 2rem 0;
+    background: #B3B04F;
+  }
+  .una:before, .una:after {
+    content: '\2021';
+    font-size: 2rem;
+    color: #B3B04F;
+    position: absolute;
+    transform: rotate(90deg);
+  }
+  .una:before {
+    left:0;
+  }
+  .una:after {
+    right: 0;
+  }
+/* fIN de Estilo de la línea */
